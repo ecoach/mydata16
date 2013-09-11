@@ -7,6 +7,7 @@ from djangotailoring.models import SubjectData
 # Create your models here.
 
 # python ../manage.py makemtsmodel > MODEL.OUT (results go below here)
+# model matches dict rev 1700
 
 TEXT_PARENTED_CHOICES = (
     ('Less_HS', 'Less than High School'),
@@ -92,11 +93,6 @@ TEXT_INVOLVEDIN_CHOICES = (
     ('Volunteering', 'Volunteering'),
     ('Music_Art', 'Music/Art'),
     ('Other', 'Other Student Clubs/Organzations'),
-)
-
-OPT_OUT_CHOICES = (
-    ('0', 'Opt in'),
-    ('1', 'Opt out'),
 )
 
 CTEXT_GENDER_CHOICES = (
@@ -413,11 +409,6 @@ class Source1(SubjectData):
     class Meta: 
         db_table = 'mydata_source1'
     SLC_Enrolled = models.CharField(max_length=3, choices=TEXT_SLCENROLLED_CHOICES, null=True, blank=True)
-    Reg_Enrolled = models.IntegerField(null=True, blank=True)
-    Reg_GPA = models.FloatField(null=True, blank=True)
-    Reg_Gender = models.CharField(max_length=5, null=True, blank=True)
-    Reg_Acad_Level = models.CharField(max_length=20, null=True, blank=True)
-    Signup_Opt_Out = models.IntegerField(null=True, blank=True)
     AP_Bio = models.CharField(max_length=3, choices=TEXT_APBIO_CHOICES, null=True, blank=True)
     AP_Chem = models.CharField(max_length=3, choices=TEXT_APCHEM_CHOICES, null=True, blank=True)
     Confidence = models.CharField(max_length=2, choices=INT_CONFIDENCE_CHOICES, null=True, blank=True)
