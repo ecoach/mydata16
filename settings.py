@@ -16,11 +16,11 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 # globals
-DB_NAME    = 'ecoach6'
-DPROJ_NAME = 'mydata6'
-MPROJ_NAME = 'mts6'
+DB_NAME    = 'ecoach16'
+DPROJ_NAME = 'mydata16'
+MPROJ_NAME = 'mts16'
 COACH_NAME = 'MCDB 310: Fall 2013'
-COACH_URL = 'coach6'
+COACH_URL = 'coach16'
 COACH_EMAIL = 'ECoachHelpMCDB310@umich.edu'
 
 from os.path import abspath, dirname, join
@@ -35,7 +35,7 @@ DOMAIN = 'localhost'
 DOMAIN_COACH = '/' + COACH_URL + '/'
 URL_SUB = MPROJ_NAME + '/'
 
-MYDATA = 'mydata6'
+MYDATA = 'mydata16'
 
 DATABASE_ROUTERS = ['mycoach.routers.UserRouter', 'mycoach.routers.CommonRouter']
 
