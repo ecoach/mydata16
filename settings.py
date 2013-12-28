@@ -19,7 +19,7 @@ TEMPLATE_DEBUG = DEBUG
 DB_NAME    = 'ecoach16'
 DPROJ_NAME = 'mydata16'
 MPROJ_NAME = 'mts16'
-COACH_NAME = 'MCDB 310: Fall 2013'
+COACH_NAME = 'MCDB 310: Winter 2014'
 COACH_URL = 'coach16'
 COACH_EMAIL = 'ECoachHelpMCDB310@umich.edu'
 
