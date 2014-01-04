@@ -177,6 +177,7 @@ INSTALLED_APPS = (
     'south',
     DPROJ_NAME,
     'myselector',
+    'mycoach',
     'mytailoring',
     'mypublisher',
     'myusage',
