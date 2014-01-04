@@ -2,7 +2,6 @@ from django.conf.urls.defaults import patterns, include, url
 from .views import *
 from django.contrib.auth.decorators import login_required
 from django.views.generic.simple import redirect_to
-#from mycoach import urls
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -25,7 +24,7 @@ mts_patterns = patterns('',
     url(r'^logger/',        include('mylogger.urls', namespace='mylogger')),
 
     # message project
-    url(r'^',               include('mycoach.urls', namespace='mycoach')),
+    url(r'^',               include('mytailoring.urls', namespace='mytailoring')),
 )
 
 urlpatterns = patterns('',

@@ -177,7 +177,7 @@ INSTALLED_APPS = (
     'south',
     DPROJ_NAME,
     'myselector',
-    'mycoach',
+    'mytailoring',
     'mypublisher',
     'myusage',
     'myemailer',
@@ -216,7 +216,7 @@ LOGGING = {
     }
 }
 
-AUTH_PROFILE_MODULE = 'mycoach.UserProfile'
+AUTH_PROFILE_MODULE = 'mytailoring.UserProfile'
 
 if HOST == "PRODUCTION" or HOST == "DEVELOPMENT":
     AUTHENTICATION_BACKENDS = (
@@ -224,7 +224,7 @@ if HOST == "PRODUCTION" or HOST == "DEVELOPMENT":
     )
 else:
     AUTHENTICATION_BACKENDS = (
-        'mycoach.backends.SettingsBackend',
+        'mytailoring.backends.SettingsBackend',
     )
 
 LOGIN_URL = '/coaches/login/'
